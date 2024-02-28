@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Test na opičí syndrom")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+980618009e6b208bc7df37200c47a4e83e00f112")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec5f59f858b5b059e4bcac4648ee16c012c77713")]
 [assembly: System.Reflection.AssemblyProductAttribute("Test na opičí syndrom")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Test na opičí syndrom")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

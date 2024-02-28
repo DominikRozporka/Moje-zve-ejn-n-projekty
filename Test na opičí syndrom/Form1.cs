@@ -5,6 +5,9 @@ namespace Test_na_opičí_syndrom
 {
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Settings for window start
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -15,7 +18,11 @@ namespace Test_na_opičí_syndrom
             (OdpovedD).Hide();
             (MonkeyImage).Hide();
         }
-
+        /// <summary>
+        /// Settings for form load
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -46,7 +53,11 @@ namespace Test_na_opičí_syndrom
         {
 
         }
-
+        /// <summary>
+        /// Settings and actions for button which starts test.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click_1(object sender, EventArgs e)
         {
             (Test).Hide();
@@ -69,12 +80,20 @@ namespace Test_na_opičí_syndrom
         {
 
         }
-
+        /// <summary>
+        /// Action for close application on button.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ApplicationEnd_Click(object sender, EventArgs e)
         {
             Close();
         }
-
+        /// <summary>
+        /// Settings and actions for button which is working as answer for question.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OdpovedA_Click(object sender, EventArgs e)
         {
             OtazkyAOdpovedi.odpovediUzivatele += "a ";
@@ -111,6 +130,11 @@ namespace Test_na_opičí_syndrom
             }
         }
 
+        /// <summary>
+        /// Settings and actions for button which is working as answer for question.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OdpovedB_Click(object sender, EventArgs e)
         {
             OtazkyAOdpovedi.odpovediUzivatele += "b ";
@@ -147,6 +171,11 @@ namespace Test_na_opičí_syndrom
             }
         }
 
+        /// <summary>
+        /// Settings and actions for button which is working as answer for question.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OdpovedC_Click(object sender, EventArgs e)
         {
             OtazkyAOdpovedi.odpovediUzivatele += "c ";
@@ -183,6 +212,11 @@ namespace Test_na_opičí_syndrom
             }
         }
 
+        /// <summary>
+        /// Settings and actions for button which is working as answer for question.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OdpovedD_Click(object sender, EventArgs e)
         {
             OtazkyAOdpovedi.odpovediUzivatele += "d ";
