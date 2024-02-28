@@ -1,0 +1,18 @@
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\bin\Debug\net6.0-windows\Test na opičí syndrom.exe
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\bin\Debug\net6.0-windows\Test na opičí syndrom.deps.json
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\bin\Debug\net6.0-windows\Test na opičí syndrom.runtimeconfig.json
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\bin\Debug\net6.0-windows\Test na opičí syndrom.dll
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\bin\Debug\net6.0-windows\Test na opičí syndrom.pdb
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test na opičí syndrom.csproj.AssemblyReference.cache
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test_na_opičí_syndrom.Form1.resources
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test na opičí syndrom.csproj.GenerateResource.cache
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test na opičí syndrom.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test na opičí syndrom.AssemblyInfoInputs.cache
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test na opičí syndrom.AssemblyInfo.cs
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test na opičí syndrom.csproj.CoreCompileInputs.cache
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test na opičí syndrom.dll
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\refint\Test na opičí syndrom.dll
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test na opičí syndrom.pdb
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test na opičí syndrom.genruntimeconfig.cache
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\ref\Test na opičí syndrom.dll
+C:\Users\Dominik Rozporka\Dropbox\Programming\Csharp\Test na opičí syndrom\Test na opičí syndrom\obj\Debug\net6.0-windows\Test_na_opičí_syndrom.Properties.Resources.resources

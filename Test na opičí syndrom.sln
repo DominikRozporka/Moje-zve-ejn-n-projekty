@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test na opičí syndrom", "Test na opičí syndrom\Test na opičí syndrom.csproj", "{8A354E2D-D200-406A-BBC7-E81D0F5A4CCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A354E2D-D200-406A-BBC7-E81D0F5A4CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A354E2D-D200-406A-BBC7-E81D0F5A4CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A354E2D-D200-406A-BBC7-E81D0F5A4CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A354E2D-D200-406A-BBC7-E81D0F5A4CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AFCFAC1-69FF-4DA5-985D-5B9183C9D09F}
+	EndGlobalSection
+EndGlobal
