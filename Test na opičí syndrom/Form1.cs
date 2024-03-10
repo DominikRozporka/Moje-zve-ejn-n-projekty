@@ -1,4 +1,5 @@
 using System;
+using System.Windows.Forms;
 using System.Windows.Forms.Design.Behavior;
 
 namespace Test_na_opičí_syndrom
@@ -17,6 +18,23 @@ namespace Test_na_opičí_syndrom
             (OdpovedC).Hide();
             (OdpovedD).Hide();
             (MonkeyImage).Hide();
+            (MonkeyImage2).Hide();
+            (NejlepsiBlazen).Hide();
+            (NejlepsiBlazen2).Hide();
+        }
+        private void CenterControls()
+        {
+            foreach (Control control in this.Controls)
+            {
+                // Nastavení umístění a připojení ovládacího prvku k prostředku formuláře
+                control.Anchor = AnchorStyles.None; // Zrušení připojení k okrajům
+                control.Left = (this.ClientSize.Width - control.Width) / 2;
+                control.Top = (this.ClientSize.Height - control.Height) / 2;
+            }
+        }
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            CenterControls();
         }
         /// <summary>
         /// Settings for form load
@@ -25,10 +43,9 @@ namespace Test_na_opičí_syndrom
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            WindowState = FormWindowState.Maximized;
-            FormBorderStyle = FormBorderStyle.None;
-            Bounds = Screen.PrimaryScreen.Bounds;
+            this.WindowState = FormWindowState.Maximized;
+            //FormBorderStyle = FormBorderStyle.None;
+            //Bounds = Screen.PrimaryScreen.Bounds;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -60,9 +77,13 @@ namespace Test_na_opičí_syndrom
         /// <param name="e"></param>
         private void button2_Click_1(object sender, EventArgs e)
         {
+            (textAutora).Hide();
             (Test).Hide();
             (ApplicationEnd).Hide();
             (MonkeyImage).Hide();
+            (MonkeyImage2).Hide();
+            (NejlepsiBlazen).Hide();
+            (NejlepsiBlazen2).Hide();
             OtazkyAOdpovedi.beh = true;
             Otazka.Text = "Venku je zima a ty musíš jít ven, co si na sebe vezmeš abys měl co největší jistotu, že ti bude teplo?";
             OdpovedA.Text = "Župan";
@@ -107,16 +128,22 @@ namespace Test_na_opičí_syndrom
                 (OdpovedD).Hide();
                 if (OtazkyAOdpovedi.body != OtazkyAOdpovedi.dotaz.Length)
                 {
-                    (Otazka).Text = String.Format($"Máte opičí syndrom, nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku.");
+                    (Otazka).Text = String.Format($"Máte opičí syndrom, nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku.\nOtázek bylo celkem {OtazkyAOdpovedi.spravneOdpovedi.Length}");
                     (MonkeyImage).Show();
-
+                    (MonkeyImage2).Show();
+                    (textAutora).Show();
                 }
                 else
-                    (Otazka).Text = String.Format($"Nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku, nemáte tedy diagnózu opičího syndromu\nmůžete se považovat za nejlepšího blázna v dobrém slovasmyslu.");
+                {
+                    (Otazka).Text = String.Format($"Nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku, otázek bylo celkem {OtazkyAOdpovedi.spravneOdpovedi.Length} .\nNemáte tedy diagnózu opičího syndromu. Můžete se považovat za nejlepšího blázna v dobrém slovasmyslu.");
+                    (NejlepsiBlazen).Show();
+                    (NejlepsiBlazen2).Show();
+                }
                 OtazkyAOdpovedi.body = 0;
                 OtazkyAOdpovedi.cisloOtazky = 0;
                 OtazkyAOdpovedi.odpovediUzivatele = "";
                 (Test).Show();
+                (textAutora).Show();
                 (ApplicationEnd).Show();
             }
             if (OtazkyAOdpovedi.beh && OtazkyAOdpovedi.cisloOtazky < OtazkyAOdpovedi.dotaz.Length)
@@ -148,16 +175,22 @@ namespace Test_na_opičí_syndrom
                 (OdpovedD).Hide();
                 if (OtazkyAOdpovedi.body != OtazkyAOdpovedi.dotaz.Length)
                 {
-                    (Otazka).Text = String.Format($"Máte opičí syndrom, nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku.");
+                    (Otazka).Text = String.Format($"Máte opičí syndrom, nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku. Otázek bylo celkem {OtazkyAOdpovedi.spravneOdpovedi.Length}");
                     (MonkeyImage).Show();
+                    (MonkeyImage2).Show();
 
                 }
                 else
-                    (Otazka).Text = String.Format($"Nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku, nemáte tedy diagnózu opičího syndromu\nmůžete se považovat za nejlepšího blázna v dobrém slovasmyslu.");
+                {
+                    (Otazka).Text = String.Format($"Nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku, otázek bylo celkem {OtazkyAOdpovedi.spravneOdpovedi.Length} .\nNemáte tedy diagnózu opičího syndromu. Můžete se považovat za nejlepšího blázna v dobrém slovasmyslu.");
+                    (NejlepsiBlazen).Show();
+                    (NejlepsiBlazen2).Show();
+                }
                 OtazkyAOdpovedi.body = 0;
                 OtazkyAOdpovedi.cisloOtazky = 0;
                 OtazkyAOdpovedi.odpovediUzivatele = "";
                 (Test).Show();
+                (textAutora).Show();
                 (ApplicationEnd).Show();
             }
             if (OtazkyAOdpovedi.beh && OtazkyAOdpovedi.cisloOtazky < OtazkyAOdpovedi.dotaz.Length)
@@ -189,16 +222,22 @@ namespace Test_na_opičí_syndrom
                 (OdpovedD).Hide();
                 if (OtazkyAOdpovedi.body != OtazkyAOdpovedi.dotaz.Length)
                 {
-                    (Otazka).Text = String.Format($"Máte opičí syndrom, nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku.");
+                    (Otazka).Text = String.Format($"Máte opičí syndrom, nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku.\nOtázek bylo celkem {OtazkyAOdpovedi.spravneOdpovedi.Length}");
                     (MonkeyImage).Show();
+                    (MonkeyImage2).Show();
 
                 }
                 else
-                    (Otazka).Text = String.Format($"Nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku, nemáte tedy diagnózu opičího syndromu\nmůžete se považovat za nejlepšího blázna v dobrém slovasmyslu.");
+                {
+                    (Otazka).Text = String.Format($"Nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku, otázek bylo celkem {OtazkyAOdpovedi.spravneOdpovedi.Length} .\nNemáte tedy diagnózu opičího syndromu. Můžete se považovat za nejlepšího blázna v dobrém slovasmyslu.");
+                    (NejlepsiBlazen).Show();
+                    (NejlepsiBlazen2).Show();
+                }
                 OtazkyAOdpovedi.body = 0;
                 OtazkyAOdpovedi.cisloOtazky = 0;
                 OtazkyAOdpovedi.odpovediUzivatele = "";
                 (Test).Show();
+                (textAutora).Show();
                 (ApplicationEnd).Show();
             }
             if (OtazkyAOdpovedi.beh && OtazkyAOdpovedi.cisloOtazky < OtazkyAOdpovedi.dotaz.Length)
@@ -230,16 +269,22 @@ namespace Test_na_opičí_syndrom
                 (OdpovedD).Hide();
                 if (OtazkyAOdpovedi.body != OtazkyAOdpovedi.dotaz.Length)
                 {
-                    (Otazka).Text = String.Format($"Máte opičí syndrom, nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku.");
+                    (Otazka).Text = String.Format($"Máte opičí syndrom, nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku.\nOtázek bylo celkem {OtazkyAOdpovedi.spravneOdpovedi.Length}");
                     (MonkeyImage).Show();
+                    (MonkeyImage2).Show();
 
                 }
                 else
-                    (Otazka).Text = String.Format($"Nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku, nemáte tedy diagnózu opičího syndromu\nmůžete se považovat za nejlepšího blázna v dobrém slovasmyslu.");
+                {
+                    (Otazka).Text = String.Format($"Nasbírál jste {OtazkyAOdpovedi.body} bodů za každou otázku, otázek bylo celkem {OtazkyAOdpovedi.spravneOdpovedi.Length} .\nNemáte tedy diagnózu opičího syndromu. Můžete se považovat za nejlepšího blázna v dobrém slovasmyslu.");
+                    (NejlepsiBlazen).Show();
+                    (NejlepsiBlazen2).Show();
+                }
                 OtazkyAOdpovedi.body = 0;
                 OtazkyAOdpovedi.cisloOtazky = 0;
                 OtazkyAOdpovedi.odpovediUzivatele = "";
                 (Test).Show();
+                (textAutora).Show();
                 (ApplicationEnd).Show();
             }
             if (OtazkyAOdpovedi.beh && OtazkyAOdpovedi.cisloOtazky < OtazkyAOdpovedi.dotaz.Length)
@@ -251,6 +296,11 @@ namespace Test_na_opičí_syndrom
                 OdpovedC.Text = OtazkyAOdpovedi.odpovediC[OtazkyAOdpovedi.cisloOtazky];
                 OdpovedD.Text = OtazkyAOdpovedi.odpovediD[OtazkyAOdpovedi.cisloOtazky];
             }
+        }
+
+        private void textAutora_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

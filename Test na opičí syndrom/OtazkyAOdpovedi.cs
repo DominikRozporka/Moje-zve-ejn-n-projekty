@@ -16,12 +16,12 @@ namespace Test_na_opičí_syndrom
         /// </summary>
         public static string[] dotaz = new string[] {
             "Venku je zima a ty musíš jít ven, co si na sebe vezmeš abys měl co největší jistotu, že ti bude teplo?", // Question number 0
-            "Jsi doma a chceš si natočit co nejvíce vody z kohoutku na pití k počítači,\n máš na výběr 4 čisté předměty, který si vybereš?", // Question number 1
+            "Jsi doma a chceš si natočit co nejvíce vody z kohoutku na pití k počítači, tak aby jsi z vybraného předmětu mohl přímo a dobře pít,\n máš na výběr 4 čisté předměty, který si vybereš?", // Question number 1
             "Máš syna který se rád vzteká a má neobvyklé záliby a ve školce dětem zbourává stavby z kostek,\n ale tvůj syn nijak nikomu fyzicky neubližuje (Nemlatí nikoho a podobně), co uděláš?", // Question number 2
             "Vláda začala nutit lidi nosit roušky kvůli novému typu viru, jaký máš na to názor?", // Question number 3
             "Co si myslíš nebo víš o lidech kteří provádí meditační cvičení?", // Question number 4
             "Co si myslíš nebo víš o lidech kteří trénují telekinezi(Pohybování předměty pomocí mysli)?", // Question number 5
-            "Co si myslíš nebo víš o lidech kteří trénují telepatii?(Čtení myšlenek a posílání myšlenek nějaké osobě?)", // Question number 6
+            "Co si myslíš nebo víš o lidech kteří trénují telepatii (Čtení myšlenek a posílání myšlenek nějaké osobě)?", // Question number 6
             "Co si myslíš nebo víš o astrálním cestování(Vystupování svým astrálním tělem (duší) ven z těla)?", // Question number 7
             "Kolik má noha židlý?"}; // Question number 8
 
@@ -52,7 +52,7 @@ namespace Test_na_opičí_syndrom
             "Jsou to hlupáci", "Že nic takového jako telekineze neexistuje", "Myslím si, že nic takového neexistuje", "Že astrální cestování provádí negativní blázni", "Noha má 5 židlý."};
 
         public static bool beh = false; // For checking if test is runnig
-        private static string[] spravneOdpovedi = new string[] { "a", "c", "d", "d", "b", "c", "a", "c", "a" }; // Correct answers
+        public static string[] spravneOdpovedi = new string[] { "a", "c", "d", "d", "b", "c", "a", "c", "a" }; // Correct answers
         public static int body = 0; // Number of collected points, starts on 0
         public static int cisloOtazky = 0; // Actual question number
         public static string odpovediUzivatele = ""; //Adding answers according to user
